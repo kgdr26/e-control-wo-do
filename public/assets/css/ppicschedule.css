@@ -1,0 +1,204 @@
+figure{
+    margin: 0rem;
+    width: 100%;
+    height: auto;
+}
+
+figure div{
+    width: 100%;
+    height: 20rem;
+}
+
+
+.datepicker-top-left::before, 
+.datepicker-top-left::after, 
+.datepicker-top-right::before, 
+.datepicker-top-right::after{
+    display: none;
+}
+
+.datepicker-top-left,
+.datepicker-top-right{
+    border-top-color: transparent !important;
+}
+
+.datepicker-dropdown {
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    -webkit-box-shadow: 0 3px 6px transparent;
+    box-shadow: 0 3px 6px transparent;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+    position: absolute;
+    z-index: 1;
+
+    top: 20%;
+    left: 43%;
+}
+
+.datepicker-panel>ul{
+    width: 100%;
+}
+
+.datepicker-panel>ul>li[data-view="month prev"],
+.datepicker-panel>ul>li[data-view="month next"],
+.datepicker-panel>ul>li[data-view="year prev"],
+.datepicker-panel>ul>li[data-view="year next"],
+.datepicker-panel>ul>li[data-view="years prev"],
+.datepicker-panel>ul>li[data-view="years next"]{
+    width: 20%;
+}
+
+.datepicker-panel>ul>li[data-view="month current"],
+.datepicker-panel>ul>li[data-view="year current"],
+.datepicker-panel>ul>li[data-view="years current"]{
+    width: 60%;
+    padding: 1rem 0rem;
+}
+
+.datepicker-panel>ul>li[data-view="years prev"],
+.datepicker-panel>ul>li[data-view="year prev"],
+.datepicker-panel>ul>li[data-view="month prev"],
+.datepicker-panel>ul>li[data-view="years next"],
+.datepicker-panel>ul>li[data-view="year next"],
+.datepicker-panel>ul>li[data-view="month next"],
+.datepicker-panel>ul>li[data-view="next"]{
+    font-size: 2.5rem;
+}
+
+.datepicker-panel>ul>li[data-view="years current"],
+.datepicker-panel>ul>li[data-view="year current"],
+.datepicker-panel>ul>li[data-view="month current"]{
+    font-size: 1.5rem;
+}
+
+.datepicker-container{
+    width: 25rem;
+    padding: 1rem;
+}
+
+.datepicker-panel>ul{
+    font-size: 1.5rem;
+}
+
+.datepicker-panel>ul>li{
+    width: 3.5rem;
+    height: 4rem;
+}
+
+.datepicker-panel>ul>li[data-view="day"],
+.datepicker-panel>ul>li[data-view="day picked"],
+.datepicker-panel>ul>li[data-view="day prev"],
+.datepicker-panel>ul>li[data-view="day next"],
+.datepicker-panel>ul>li[data-view="day"],
+.datepicker-panel>ul>li[data-view="month picked"],
+.datepicker-panel>ul>li[data-view="month prev"],
+.datepicker-panel>ul>li[data-view="month next"],
+.datepicker-panel>ul>li[data-view="month"],
+.datepicker-panel>ul>li[data-view="year picked"],
+.datepicker-panel>ul>li[data-view="year prev"],
+.datepicker-panel>ul>li[data-view="year next"],
+.datepicker-panel>ul>li[data-view="year"]{
+    padding: 1rem 0rem;
+}
+
+.datepicker-panel>ul[data-view="years"]>li, 
+.datepicker-panel>ul[data-view="months"]>li {
+    width: 6rem;
+    height: 6.5rem;
+    line-height: 4rem;
+}
+
+.daterangepicker.ltr .left .daterangepicker_input{
+  padding-right: 0rem;
+}
+
+.form-date-range{
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 0.1rem 0.1rem;
+  background: var(--var-bg-form-date-range);
+  color: var(--color-bg-date-range);
+  border: 1px solid var(--var-bg-form-date-range);
+  cursor: pointer;
+}
+
+.daterangepicker .calendar{
+  max-width: 100%;
+}
+.daterangepicker table {
+  font-size: 1.5rem;
+}
+
+.daterangepicker.dropdown-menu.ltr.show-calendar.opensright{
+  top: 15%;
+  left: 25%;
+  right: 25%;
+  width: 50%;
+  padding: 0rem;
+}
+
+.grid-daterangepicker{
+  display: grid;
+  padding: 0.5rem;
+  grid-template-areas:
+  "left right"
+  "ranges ranges";
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto;
+  grid-gap: 0.5rem;
+  background: #FFFFFF;
+}
+
+.left{
+  grid-area: left;
+}
+
+.right{
+  grid-area: right;
+}
+
+.ranges{
+  grid-area: ranges;
+  margin-top: 1rem;
+}
+
+
+.daterangepicker.opensright:after,
+.daterangepicker.opensright:before{
+  display: none;
+}
+
+.btn-apply{
+  background: #16A086;
+  border-radius: 0.2rem;
+  padding: 0.5rem 1rem;
+  color: white;
+  border: 1px solid #16A086;
+  font-size: 1.5rem;
+}
+
+.btn-apply:hover{
+  border: 1px solid #16A086;
+  background: white;
+  color: #16A086;
+}
+
+.btn-clear{
+  background: #dc3545;
+  border-radius: 0.2rem;
+  padding: 0.5rem 1rem;
+  color: white;
+  border: 1px solid #dc3545;
+  font-size: 1.5rem;
+}
+
+.btn-clear:hover{
+  border: 1px solid #dc3545;
+  background: white;
+  color: #dc3545;
+}
+
+.daterangepicker td, .daterangepicker th{
+  border-radius: 0rem;
+}
