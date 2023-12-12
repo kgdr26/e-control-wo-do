@@ -266,9 +266,9 @@ class MainController extends Controller
             $so_no          = $row[0];
             $pt_no          = $row[1];
             $wo_state       = $row[2];
-            $wo_date        = $row[3];
+            $wo_date        = date("Y-m-d H:i:s", strtotime($row[3]));
             $do_no          = $row[4];
-            $do_date        = $row[5];
+            $do_date        = date("Y-m-d H:i:s", strtotime($row[5]));
             $do_state       = $row[6];
             $tgl_upload     = date('Y-m-d H:i:s');
             $update_by      = auth::user()->id;

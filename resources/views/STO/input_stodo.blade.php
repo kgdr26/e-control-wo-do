@@ -239,10 +239,34 @@
                },
                { "data":"so_no"},
                { "data":"pt_no"},
-               { "data":"wo_state"},
+               { 
+                    // "data":"wo_state"
+                    "data": "wo_state",
+                    "render": function (data, type, row, meta) {
+                    // Menggunakan meta.row untuk mendapatkan nomor urut
+                        if(data === "Done"){
+                            return "Finished";
+                        }else{
+                            return data;
+                        }
+                    
+                    }
+                },
                { "data":"wo_date"},
                { "data":"do_no"},
-               { "data":"do_state"},
+               { 
+                    // "data":"do_state"
+                    "data": "do_state",
+                    "render": function (data, type, row, meta) {
+                    // Menggunakan meta.row untuk mendapatkan nomor urut
+                        if(data === "Done"){
+                            return "Delivered";
+                        }else{
+                            return data;
+                        }
+                    
+                    }
+                },
                { "data":"tgl_upload"},
                // Tambahkan kolom sesuai kebutuhan Anda
            ],

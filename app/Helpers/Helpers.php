@@ -24,10 +24,20 @@ function downloadsto($filename,$start_export,$end_export){
         $spreadsheet->getSheet(0)->setCellValue('B' . $row, $val->so_no);
         $spreadsheet->getSheet(0)->setCellValue('C' . $row, $val->pt_no);
         $spreadsheet->getSheet(0)->setCellValue('D' . $row, $val->wo_state);
+        if($val->wo_state == 'Done'){
+            $spreadsheet->getSheet(0)->setCellValue('D' . $row, "Finished");
+        }else{
+            $spreadsheet->getSheet(0)->setCellValue('D' . $row, $val->wo_state);
+        }
         $spreadsheet->getSheet(0)->setCellValue('E' . $row, $val->wo_date);
         $spreadsheet->getSheet(0)->setCellValue('F' . $row, $val->do_no);
         $spreadsheet->getSheet(0)->setCellValue('G' . $row, $val->do_date);
         $spreadsheet->getSheet(0)->setCellValue('H' . $row, $val->do_state);
+        if($val->do_state == 'Done'){
+            $spreadsheet->getSheet(0)->setCellValue('H' . $row, "Delivered");
+        }else{
+            $spreadsheet->getSheet(0)->setCellValue('H' . $row, $val->do_state);
+        }
         $row++;
     }
 
