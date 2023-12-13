@@ -22,6 +22,8 @@ class AuthController extends Controller
                 return redirect()->route('input_stowo');
             }else if(auth::user()->role_id == 3){
                 return redirect()->route('input_stodo');
+            }else if(auth::user()->role_id == 4){
+                return redirect()->route('upload_sto');
             }
         }
         return view('login');
@@ -61,6 +63,8 @@ class AuthController extends Controller
                 return redirect()->route('input_stowo');
             }else if(auth::user()->role_id == 3){
                 return redirect()->route('input_stodo');
+            }else if(auth::user()->role_id == 4){
+                return redirect()->route('upload_sto');
             }
 
         } else {

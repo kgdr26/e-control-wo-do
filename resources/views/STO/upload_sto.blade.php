@@ -12,7 +12,9 @@
 
                         <div>
                             <button type="button" class="btn btn-primary" data-name="export">Export STO WO-DO</button>
-                            <button type="button" class="btn btn-success" data-name="add">Upload After STO WO-DO</button>
+                            @if($idn_user->role_id == 1)
+                                <button type="button" class="btn btn-success" data-name="add">Upload After STO WO-DO</button>
+                            @endif
                         </div>
                     </div>
                 </div>

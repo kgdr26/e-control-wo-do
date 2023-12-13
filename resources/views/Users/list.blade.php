@@ -93,6 +93,7 @@
                                     <option value="1">SUPERADMIN</option>
                                     <option value="2">OPR WO</option>
                                     <option value="3">OPR DO</option>
+                                    <option value="4">MARKETING</option>
                                 </select>
                             </div>
                             <div class="mb-3">
@@ -160,6 +161,7 @@
                                     <option value="1">SUPERADMIN</option>
                                     <option value="2">OPR WO</option>
                                     <option value="3">OPR DO</option>
+                                    <option value="4">MARKETING</option>
                                 </select>
                             </div>
                             <div class="mb-3">

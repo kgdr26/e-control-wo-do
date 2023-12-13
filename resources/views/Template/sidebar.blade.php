@@ -50,6 +50,15 @@
                 </a>
             </li>
 
+        @elseif($idn_user->role_id == 4)
+
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="{{route('upload_sto')}}">
+                    <i class="bi bi-file-arrow-up-fill"></i>
+                    <span>Upload STO</span>
+                </a>
+            </li>
+
         @endif
 
         <li class="nav-item">
