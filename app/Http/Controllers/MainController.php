@@ -285,7 +285,7 @@ class MainController extends Controller
             $tgl_upload     = date('Y-m-d H:i:s');
             $update_by      = auth::user()->id;
 
-            if (in_array($pt_no, $wo_no_db) || in_array($do_no, $do_no_db)){
+            if (in_array($pt_no, $wo_no_db)){
                 
             } else {
                 DB::insert("INSERT INTO trx_sto (so_no, pt_no, wo_state, wo_date, do_no, do_date, do_state, tgl_upload, update_by) values (?, ?, ?, ?, ?, ?, ?, ?, ?)", [$so_no, $pt_no, $wo_state, $wo_date, $do_no, $do_date, $do_state, $tgl_upload, $update_by]);
